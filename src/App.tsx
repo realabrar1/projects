@@ -22,6 +22,7 @@ function App() {
           <Route path="health-support" element={<HealthSupport />} />
           <Route path="pet-dating" element={<PetDating />} />
           <Route path="marketplace" element={<Marketplace />} />
+          <Route path="/about" element={<About />} />
           <Route path="community" element={<Community />} />
           <Route path="health-monitoring" element={<HealthMonitoring />} />
           <Route path="virtual-vets" element={<VirtualVets />} />
