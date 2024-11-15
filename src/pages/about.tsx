@@ -4,23 +4,18 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 const About = () => {
   const teamMembers = [
     {
-      name: 'John Doe',
+      name: 'SYED ABRAR',
       position: 'Founder & CEO',
       image: 'https://img.freepik.com/free-vector/cute-cool-boy-listening-music-with-headphone-cartoon-vector-icon-illustration-people-music-isolated_138676-10365.jpg?semt=ais_hybrid',
       bio: 'John is a passionate animal lover who founded PetsMoms to help pet owners find the best products and services for their furry friends.',
     },
     {
-      name: 'Jane Smith',
-      position: 'Chief Marketing Officer',
+      name: 'SYED SHOAIB ABRAR',
+      position: 'CTO',
       image: 'https://img.freepik.com/free-vector/cute-girl-wearing-headphones-cartoon-vector_138676-3151.jpg',
       bio: 'Jane is responsible for ensuring that PetsMoms reaches every pet owner who needs advice or services for their pets.',
     },
-    {
-      name: 'Emily Johnson',
-      position: 'Chief Veterinary Officer',
-      image: 'https://img.freepik.com/free-vector/cute-woman-doctor-cartoon_138676-2097.jpg',
-      bio: 'Emily has been a licensed veterinarian for over 10 years and leads our team in providing expert advice to pet owners.',
-    },
+  
   ];
 
   return (
