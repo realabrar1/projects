@@ -12,6 +12,7 @@ import SmartScheduling from './pages/SmartScheduling';
 import PetLocation from './pages/PetLocation';
 import HealthGuard from './pages/HealthGuard';
 import Rewards from './pages/Rewards';
+import About from './pages/about'; 
 
 function App() {
   return (
