@@ -6,7 +6,7 @@ const About = () => {
     {
       name: 'SYED ABRAR',
       position: 'Founder & CEO',
-      image: 'https://img.freepik.com/free-vector/cute-cool-boy-listening-music-with-headphone-cartoon-vector-icon-illustration-people-music-isolated_138676-10365.jpg?semt=ais_hybrid',
+      image: 'https://drive.google.com/file/d/1MfNW6QWi4CNsE6DzsD8yxg2-cDsqge-E/view?usp=drive_link',
       bio: 'John is a passionate animal lover who founded PetsMoms to help pet owners find the best products and services for their furry friends.',
     },
     {
