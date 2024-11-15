@@ -12,7 +12,7 @@ const About = () => {
     {
       name: 'SYED SHOAIB ABRAR',
       position: 'CTO',
-      image: 'https://img.freepik.com/free-vector/cute-girl-wearing-headphones-cartoon-vector_138676-3151.jpg',
+      image: 'https://github.com/realabrar1/images/blob/main/fotor-20240504175440.png',
       bio: 'Jane is responsible for ensuring that PetsMoms reaches every pet owner who needs advice or services for their pets.',
     },
   
