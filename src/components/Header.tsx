@@ -55,6 +55,7 @@ export default function Header() {
               </>
             ) : (
               <>
+                <Link to="/about" className="text-gray-600 hover:text-gray-900">About</Link> {/* About link for non-authenticated users */}
                 <Link to="/login" className="text-gray-600 hover:text-gray-900">Sign In</Link>
                 <Link
                   to="/register"
