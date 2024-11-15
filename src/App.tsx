@@ -4,7 +4,6 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import HealthSupport from './pages/HealthSupport';
 import PetDating from './pages/PetDating';
-import About from './pages/About';
 import Marketplace from './pages/Marketplace';
 import Community from './pages/Community';
 import HealthMonitoring from './pages/HealthMonitoring';
@@ -13,6 +12,7 @@ import SmartScheduling from './pages/SmartScheduling';
 import PetLocation from './pages/PetLocation';
 import HealthGuard from './pages/HealthGuard';
 import Rewards from './pages/Rewards';
+import About from './pages/About';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Route path="health-support" element={<HealthSupport />} />
           <Route path="pet-dating" element={<PetDating />} />
           <Route path="marketplace" element={<Marketplace />} />
-          <Route path="about" element={<About />} />
+          <Route path="/about" element={<About />} />
           <Route path="community" element={<Community />} />
           <Route path="health-monitoring" element={<HealthMonitoring />} />
           <Route path="virtual-vets" element={<VirtualVets />} />
