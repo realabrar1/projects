@@ -6,16 +6,15 @@ const About = () => {
     {
       name: 'SYED ABRAR',
       position: 'Founder & CEO',
-      image: 'https://github.com/realabrar1/images/blob/main/fotor-20240504175440.png',
+      image: 'https://raw.githubusercontent.com/realabrar1/images/main/fotor-20240504175440.png',
       bio: 'John is a passionate animal lover who founded PetsMoms to help pet owners find the best products and services for their furry friends.',
     },
     {
       name: 'SYED SHOAIB ABRAR',
       position: 'CTO',
-      image: 'https://github.com/realabrar1/images/blob/main/fotor-20240504175440.png',
+      image: 'https://raw.githubusercontent.com/realabrar1/images/main/fotor-20240504175440.png',
       bio: 'Jane is responsible for ensuring that PetsMoms reaches every pet owner who needs advice or services for their pets.',
     },
-  
   ];
 
   return (
