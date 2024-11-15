@@ -6,7 +6,7 @@ const About = () => {
     {
       name: 'SYED ABRAR',
       position: 'Founder & CEO',
-      image: 'https://github.com/realabrar1/images/blob/main/Pi7_Passport_Photo%20(1).jpeg',
+      image: 'https://github.com/realabrar1/images/blob/main/fotor-20240504175440.png',
       bio: 'John is a passionate animal lover who founded PetsMoms to help pet owners find the best products and services for their furry friends.',
     },
     {
