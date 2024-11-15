@@ -28,43 +28,46 @@ export default function Header() {
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
-            {isAuthenticated ? (
-              <>
-                <Link to="/notifications" className="p-2 rounded-full hover:bg-gray-100">
-                  <Bell className="h-6 w-6 text-gray-600" />
-                </Link>
-                <div className="relative group">
-                  <button className="flex items-center space-x-2 p-2 rounded-full hover:bg-gray-100">
-                    <img
-                      src={user?.avatar || 'https://ui-avatars.com/api/?name=' + user?.name}
-                      alt={user?.name}
-                      className="h-8 w-8 rounded-full"
-                    />
-                  </button>
-                  <div className="absolute right-0 w-48 mt-2 py-2 bg-white rounded-lg shadow-xl hidden group-hover:block">
-                    <Link to="/profile" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Profile</Link>
-                    <Link to="/settings" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Settings</Link>
-                    <button
-                      onClick={logout}
-                      className="block w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-100"
-                    >
-                      Sign Out
-                    </button>
-                  </div>
-                </div>
-              </>
-            ) : (
-              <>
-                <Link to="/login" className="text-gray-600 hover:text-gray-900">Sign In</Link>
-                <Link
-                  to="/register"
-                  className="btn"
-                >
-                  Get Started
-                </Link>
-              </>
-            )}
-          </div>
+  {isAuthenticated ? (
+    <>
+      <Link to="/notifications" className="p-2 rounded-full hover:bg-gray-100">
+        <Bell className="h-6 w-6 text-gray-600" />
+      </Link>
+      <Link to="/about" className="text-gray-600 hover:text-gray-900">About</Link> {/* About link */}
+      <div className="relative group">
+        <button className="flex items-center space-x-2 p-2 rounded-full hover:bg-gray-100">
+          <img
+            src={user?.avatar || 'https://ui-avatars.com/api/?name=' + user?.name}
+            alt={user?.name}
+            className="h-8 w-8 rounded-full"
+          />
+        </button>
+        <div className="absolute right-0 w-48 mt-2 py-2 bg-white rounded-lg shadow-xl hidden group-hover:block">
+          <Link to="/profile" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Profile</Link>
+          <Link to="/settings" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Settings</Link>
+          <button
+            onClick={logout}
+            className="block w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-100"
+          >
+            Sign Out
+          </button>
+        </div>
+      </div>
+    </>
+  ) : (
+    <>
+      <Link to="/about" className="text-gray-600 hover:text-gray-900">About</Link> {/* About link for non-authenticated users */}
+      <Link to="/login" className="text-gray-600 hover:text-gray-900">Sign In</Link>
+      <Link
+        to="/register"
+        className="btn"
+      >
+        Get Started
+      </Link>
+    </>
+  )}
+</div>
+
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -83,56 +86,70 @@ export default function Header() {
       </div>
 
       {/* Mobile menu */}
-      {isMenuOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            <div className="p-2">
-              <input
-                type="text"
-                placeholder="Search..."
-                className="w-full px-4 py-2 rounded-full border border-gray-300"
-              />
-            </div>
-            {isAuthenticated ? (
-              <>
-                <Link
-                  to="/profile"
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                >
-                  Profile
-                </Link>
-                <Link
-                  to="/notifications"
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                >
-                  Notifications
-                </Link>
-                <button
-                  onClick={logout}
-                  className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                >
-                  Sign Out
-                </button>
-              </>
-            ) : (
-              <>
-                <Link
-                  to="/login"
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                >
-                  Sign In
-                </Link>
-                <Link
-                  to="/register"
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                >
-                  Get Started
-                </Link>
-              </>
-            )}
-          </div>
-        </div>
+      {/* Mobile menu */}
+{isMenuOpen && (
+  <div className="md:hidden">
+    <div className="px-2 pt-2 pb-3 space-y-1">
+      <div className="p-2">
+        <input
+          type="text"
+          placeholder="Search..."
+          className="w-full px-4 py-2 rounded-full border border-gray-300"
+        />
+      </div>
+      {isAuthenticated ? (
+        <>
+          <Link
+            to="/about"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+          >
+            About
+          </Link>
+          <Link
+            to="/profile"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+          >
+            Profile
+          </Link>
+          <Link
+            to="/notifications"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+          >
+            Notifications
+          </Link>
+          <button
+            onClick={logout}
+            className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+          >
+            Sign Out
+          </button>
+        </>
+      ) : (
+        <>
+          <Link
+            to="/about"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+          >
+            About
+          </Link>
+          <Link
+            to="/login"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+          >
+            Sign In
+          </Link>
+          <Link
+            to="/register"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+          >
+            Get Started
+          </Link>
+        </>
       )}
+    </div>
+  </div>
+)}
+
     </header>
   );
 }
