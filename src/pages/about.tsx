@@ -6,7 +6,7 @@ const About = () => {
     {
       name: 'SYED ABRAR',
       position: 'Founder & CEO',
-      image: 'https://yt3.googleusercontent.com/wWnW5GPoOk6NfeuGvXXkdLnxQ81QWJ7fkazhLz5InLJlZ5pDodrLxTDTkWB0y-YLPAxTb2_Jyw=s900-c-k-c0x00ffffff-no-rj',
+      image: 'https://media.licdn.com/dms/image/v2/C4D03AQE60c8dCtqk5g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1657083406550?e=1737590400&v=beta&t=WWHyeet3j33To9KRn0E6gmJhk-7Gnkgl2-sNd2DqpTE',
       bio: 'John is a passionate animal lover who founded PetsMoms to help pet owners find the best products and services for their furry friends.',
     },
     {
